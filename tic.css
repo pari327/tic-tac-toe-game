@@ -1,0 +1,115 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: #548687;
+    text-align: center;
+}
+.container{
+    height:70vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.game{
+    height: 60vmin;
+    width: 60vmin;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5vmin;
+}
+.box{
+    height: 18vmin;
+    width: 18vmin;
+    border-radius: 1rem;
+    box-shadow: 0 0 1rem rgba(0,0,0,0.3);
+    font-size: 7vmin;
+    color: rgb(203, 42, 13);
+    border-color:rgb(218, 115, 13) ;
+}
+.box:hover{
+    background-color: transparent;
+    transform: translate(-8px);
+    border-color:#ff8c00;
+}
+#reset-btn{
+    padding: 1rem;
+    font: 1.25rem;
+    background-color: rgb(65, 23, 12);
+    color: white;
+    border-radius: 1rem;
+    box-shadow:10px 10px 12px #151618,
+    -10px -10px 12px #222529,
+    inset -10px -10px 8px #e5550b,
+    inset 10px 10px 8px #bd2210;;
+}
+#new-btn{
+    padding: 1rem;
+    margin-top: 2rem;
+    font-size: 1.25rem;
+    background-color: rgb(65, 23, 12);
+    color: white;
+    border-radius: 1rem;
+    box-shadow:10px 10px 12px #151618,
+    -10px -10px 12px #222529,
+    inset -10px -10px 8px #e5550b,
+    inset 10px 10px 8px #bd2210;;
+}
+#new-btn:hover{
+    border-color:#2c14c6;
+}
+
+#msg{
+    color:#ffffc7;
+    font-size: 5vmin;
+}
+.msg-container{
+    margin-top: 10rem;
+    height: 300vmin;
+}
+.hide{
+    display: none;
+}
+h1{
+    color: white;
+    font-size: 5rem;
+    -webkit-text-stroke-width: 2px;
+    -webkit-text-stroke-color: transparent;
+    letter-spacing: 4px;
+    background: linear-gradient(8deg,rgba(8,52,83,1)0%,rgb(230, 88, 0) 41%,rgba(41,17,45,1) 100%);
+   -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+position: relative;
+}
+h1:after{
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 10%;
+    height: 8px;
+    width: 80%;
+    border-radius: 50%;
+    background-color:rgba(255,255,255, 0.05);
+}
+h1 span{
+    position: absolute;
+    top: 100%;
+    left: 10%;
+    height: 8px;
+    width: 8px;
+    border-radius: 50%;
+    background-color: #be5b0a;
+animation:anim 5s linear infinite;
+}
+@keyframes anim{
+    95%{
+        opacity: 1;
+    }
+    100%{
+        opacity: 0;
+        left: 88%;
+    }
+}
